@@ -21,6 +21,8 @@ int main(void)
 	int edadIngresada;
 	int i;
 	int edadAlta;
+	int edadBaja;
+	float promedio;
 
 	for(i=0; i<CANTIDAD_EDADES; i++)
 	{
@@ -36,6 +38,14 @@ int main(void)
 		printf("\nla edad mas alta es: %d", edadAlta);
 	}
 
+	if(arr_calcularMinimoInt(&edades, CANTIDAD_EDADES, &edadBaja)==0)
+	{
+		printf("\nla edad mas baja es: %d", edadBaja);
+	}
 
+	if(arr_calcularPromedioInt(&edades, CANTIDAD_EDADES, &promedio)==0)
+	{
+		printf("\nel promedio es: %.2f", promedio);
+	}
 	return EXIT_SUCCESS;
 }
