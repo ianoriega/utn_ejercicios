@@ -34,11 +34,8 @@ producto* producto_newParam(char* descripcion,int idTipo,int idNacionalidad,int 
 	if(auxProducto!=NULL)
 	{
 
-		if  ( 	producto_setDescripcion(auxProducto, descripcion) < 0 ||
-				empleado_setApellido(auxEmpleado,apellido) < 0 ||
-				empleado_setDni(auxEmpleado,dni) < 0 ||
-				empleado_setId(auxEmpleado,idEmpleado) < 0 )
-		{
+		if  (producto_setDescripcion(auxProducto, descripcion) ==0 &&
+
 	}
 }
 ​
